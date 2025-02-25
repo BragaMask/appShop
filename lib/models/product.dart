@@ -1,0 +1,24 @@
+class Product {
+  final String id;
+  final String title;
+  final String description;
+  final String price;
+  final String imageUrl;
+  bool isFavorite;
+
+  Product({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    this.isFavorite = false,
+  });
+
+  //toggle - alternancia
+  //método/procedimento para a alternancia do "isFavorite"
+
+  void toggleFavorite() {
+    isFavorite = !isFavorite;
+  }
+}
